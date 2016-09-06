@@ -1,0 +1,50 @@
+<div class="container-properties">
+  <center><a href="/#/">HOME</a></center>
+  <center><p> we have {{ MC.properties.length }} properties </p></center>
+  <br>
+  <center><p> SORT BY CITY: </p>
+  <select ng-model="sortBy">
+    <option value="city">City</option>
+    <option value="state">State</option>
+    <option value="zipcode">ZipCode</option>
+  </select>
+</center>
+  <div class="column-12"  ng-repeat="property in MC.properties | orderBy:sortBy">
+    <div class="column-1">
+    </div>
+    <div class="column-3">
+      <div class="property-img">
+        <img ng-src="{{ property.img }}">
+      </div>
+    </div>
+    <div class="column-7">
+      <div class="row">
+        <div class="property-name">
+          Property Name: {{ property.name }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="property-address">
+          Property Address: {{ property.address }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="property-city">
+          Property City: {{ property.city }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="property-state">
+          Property State: {{ property.state }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="property-zipcode">
+          Property ZipCode: {{ property.zipcode }}
+        </div>
+      </div>
+    </div>
+    <div class="column-1">
+    </div>
+  </div>
+</div>
