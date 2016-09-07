@@ -159,7 +159,7 @@ body, html, main {
   #sub-title {
     padding-left: 10%;
     padding-right: 10%;
-
+    font-style: bold;
   }
 }
 .cd-fixed-bg.cd-bg-2 {
@@ -343,6 +343,11 @@ figcaption {
   // }
 
 }
+.main-page-icons {
+  padding-top: 6em;
+  padding-bottom: 3em;
+  opacity: .71
+}
 @media only screen and (max-width: 480px){
   .fa {
     font-size: 2.5em;
@@ -351,17 +356,13 @@ figcaption {
     font-size: .8em;
   }
   .main-page-icons {
-    padding-top: 6em;
+    padding-top: 3em;
     padding-bottom: 3em;
     display: inline-flex;
     opacity: .71
   }
 }
-.main-page-icons {
-  padding-top: 6em;
-  padding-bottom: 3em;
-  opacity: .71
-}
+
 /* ******** FADE INS ******** */
 
 @-webkit-keyframes fadeIn {
