@@ -143,6 +143,13 @@ body, html, main {
   font-size: .8em;
   line-height: 2;
 }
+@media only screen and (max-width: 500px){
+  #sub-title {
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+}
 .cd-fixed-bg.cd-bg-2 {
   background-image:
   linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
@@ -223,19 +230,20 @@ body, html, main {
   }
 
 }
-// @media only screen and (max-width: 766px){
-//   .cd-container {
-//     // padding: 1em;
-//     font-size: 1.5em;
-//     p {
-//       padding: 1em 2em;
-//     }
-//     h1 {
-//       font-size: 1.5em;
-//     }
-//   }
-//
-// }
+@media only screen and (max-width: 600px){
+  .cd-container {
+    // padding: 1em;
+    font-size: 1.4em;
+    p {
+      padding: 1em 1em;
+      font-size: 1.1em;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+
+}
 .arrowPrev {
   width: .5em;
   height: 1em;
@@ -312,7 +320,25 @@ figcaption {
   .fade-in h3 {
     font-size: 1em;
   }
+  // .main-page-icons {
+  //   display: inline-block;
+  //   opacity: .71
+  // }
 
+}
+@media only screen and (max-width: 480px){
+  .fa {
+    font-size: 2.5em;
+  }
+  .fade-in h3 {
+    font-size: .8em;
+  }
+  .main-page-icons {
+    padding-top: 6em;
+    padding-bottom: 3em;
+    display: inline-flex;
+    opacity: .71
+  }
 }
 .main-page-icons {
   padding-top: 6em;
@@ -426,7 +452,7 @@ nav ul {
 }
 @media only screen and (max-width: 766px) {
   nav ul {
-    padding-top: 10px;
+    padding-top: 22px;
     margin-bottom: 22px;
     float: left;
     text-align: center;
@@ -448,7 +474,7 @@ nav ul li {
 nav ul a {
   color: #888888;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
 }
 nav ul a:hover {
   border-top: #888888 1px solid;
