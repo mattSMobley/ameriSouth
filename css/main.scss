@@ -75,7 +75,18 @@ body, html, main {
 .cd-fixed-bg.cd-bg-1 {
   background-image:
   linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
-   url("../img/features/skyline3.jpg");
+   url("../img/features/skyline3resize.jpg");
+
+}
+@media only screen and (max-width: 600px){
+  .cd-fixed-bg.cd-bg-1 {
+  //   background-image:
+  // linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+  //  url("../img/features/skyline3mini.jpg");
+ }
+ .cd-fixed-bg {
+   max-height: 450px;
+ }
 }
 
 
