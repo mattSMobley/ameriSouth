@@ -106,6 +106,7 @@ body, html, main {
   right: 0%;
   width: 10%;
   font-weight: 200;
+  white-space: nowrap;
   a {
     color: #bbb;
   }
@@ -134,6 +135,7 @@ body, html, main {
   .rightLink, .leftLink, .centerLink {
     display: none;
   }
+
 }
 #sub-title {
   padding-left: 20%;
@@ -189,14 +191,12 @@ body, html, main {
 .cd-container {
   padding: 1em;
   font-size: 2em;
-
   p {
     padding: 2em 4em;
     text-align: center;
     color: $primary;
     line-height: 1.8;
   }
-
   h1 {
     font-size: 1.5em;
     color: white;
@@ -210,7 +210,32 @@ body, html, main {
     text-align: center;
   }
 }
+@media only screen and (max-width: 1037px){
+  .cd-container {
+    // padding: 1em;
+    font-size: 1.5em;
+    p {
+      padding: 1em 2em;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+  }
 
+}
+// @media only screen and (max-width: 766px){
+//   .cd-container {
+//     // padding: 1em;
+//     font-size: 1.5em;
+//     p {
+//       padding: 1em 2em;
+//     }
+//     h1 {
+//       font-size: 1.5em;
+//     }
+//   }
+//
+// }
 .arrowPrev {
   width: .5em;
   height: 1em;
@@ -232,19 +257,6 @@ figcaption {
 
 }
 
-// header {
-//   height: 8em;
-//   background-color: white;
-//   width: 100%;
-//   border-bottom: $primary 1px solid;
-//   .row {
-//     padding-top: 2.5%;
-//     padding-left: 2%;
-//       .column-1 {
-//         padding-top: 3.5%;
-//       }
-//   }
-// }
 .main_h {
   position: fixed;
   top: 0px;
@@ -288,6 +300,19 @@ figcaption {
 }
 .fa-child {
   color: $primary;
+  padding-left: 35%;
+}
+@media only screen and (max-width: 937px){
+  .rightLink, .leftLink, .centerLink {
+    display: none;
+  }
+  .fa {
+    font-size: 3em;
+  }
+  .fade-in h3 {
+    font-size: 1em;
+  }
+
 }
 .main-page-icons {
   padding-top: 6em;
@@ -355,7 +380,7 @@ h3 {
 }
 .logo {
   // width: 2em;
-  font-size: 20px;
+  // font-size: 20px;
   color: #8f8f8f;
   text-transform: uppercase;
   float: left;
@@ -374,8 +399,11 @@ nav {
 @media only screen and (max-width: 766px) {
   .logo {
     float: none;
-    padding-top: 0em;
-    padding-left: .25em;
+    padding-left: 3em;
+    img {
+      width: 150px;
+      margin-top: -4px;
+    }
   }
   .main_h {
     padding-top: 25px;
@@ -383,7 +411,7 @@ nav {
 }
 nav {
   float: right;
-  width: 60%;
+  // width: 60%;
 }
 @media only screen and (max-width: 766px) {
   nav {
@@ -434,7 +462,7 @@ nav ul a:hover {
   font-size: 20px;
   position: absolute;
   right: 22px;
-  top: 0;
+  top: 22px;
   width: 30px;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -460,7 +488,7 @@ nav ul a:hover {
 
 footer {
   background-color: $primary;
-  padding-bottom: 8em;
+  // padding-bottom: 10em;
   font-family: 'Libre Baskerville';
   color: white;
   text-align: center;
@@ -476,6 +504,22 @@ footer {
     font-family: 'Libre Baskerville';
   }
 }
+@media only screen and (max-width: 1000px) {
+  footer {
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+
+}
+// @media only screen and (max-width: 700px) {
+//   footer {
+//     padding-bottom: 8em;
+//   }
+// }
 
 
 
