@@ -79,11 +79,6 @@ body, html, main {
 
 }
 @media only screen and (max-width: 600px){
-  .cd-fixed-bg.cd-bg-1 {
-    background-image:
-  linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
-   url("../img/features/skyline3mini.jpg");
- }
  .cd-fixed-bg {
    max-height: 450px;
  }
@@ -94,6 +89,12 @@ body, html, main {
   opacity: .8;
   width: 14em;
   padding-top: 1em;
+}
+@media only screen and (max-width: 600px){
+  #main-title {
+
+    padding-top: 0em;
+  }
 }
 .leftLink {
   position: absolute;
