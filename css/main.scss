@@ -241,6 +241,12 @@ body, html, main {
       font-size: 1.5em;
     }
   }
+  [class*='cd-color'] {
+    .cd-container {
+      font-size: 1em;
+    }
+    font-size: 1em;
+  }
 
 }
 .arrowPrev {
