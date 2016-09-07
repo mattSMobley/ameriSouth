@@ -83,7 +83,7 @@ body, html, main {
    max-height: 450px;
  }
  .cd-fixed-bg.cd-bg-1 {
-    // background-size:auto;
+   object-fit:scale-down;
   }
 }
 
