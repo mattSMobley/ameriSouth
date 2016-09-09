@@ -10,13 +10,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75203",
     img: "img/Good Haven - Drone shot 2.jpg",
-    pool: "no",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "324",
-    map: "1810+High+Hill+Dallas+Texas"
+    latlong: [32.7347291,-96.8008535]
   }, {
     name: "Huntington Meadows",
     address: "7000 Decker Ln.",
@@ -24,27 +24,27 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "78724",
     img: "img/Huntington1.jpg",
-    pool: "yes",
-    pets: "no",
-    laundry: "yes",
-    washer: "yes",
-    electric: "no",
+    pool: "Yes",
+    pets: "No",
+    laundry: "Yes",
+    washer: "Yes",
+    electric: "No",
     apartments: "200",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [30.2967014,-97.6277981]
   }, {
-    name: "Park Creek Manor Apartments",
+    name: "Park Creek Manor",
     address: "2520 Coombs Creek St.",
     city: "Dallas",
     state: "Texas",
     zipcode: "75211",
     img: "img/Park Creek Manor - Building and Sign Pic.jpg",
-    pool: "yes",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "Yes",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "322",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7211541,-96.8807582]
   }, {
     name: "Prairie Ridge Apartments",
     address: "313 Freetown Rd.",
@@ -52,13 +52,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75051",
     img: "http://www.amerisouthrealty.com/images/propertyImages/Prairie-Ridge-Apartments/pr_2_fit.jpg",
-    pool: "no",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "100",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.712475,-97.0118937]
   }, {
     name: "Prince Hall II",
     address: "4820 E. Berry St.",
@@ -66,27 +66,27 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "76105",
     img: "http://www.fillmurray.com/200/300",
-    pool: "no",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "76",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7114663,-97.2526067]
   }, {
     name: "Pythian Manor",
-    address: "2719 E. Illinois Ave. #100",
+    address: "2719 E. IlliNois Ave. #100",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
     img: "img/Pythian Manor - Building.jpg",
-    pool: "no",
-    pets: "no",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "No",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "76",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7175299,-96.7827407]
   }, {
     name: "Raible Place",
     address: "1216 N. Britain Rd.",
@@ -94,13 +94,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75061",
     img: "img/Raible Place- 927.jpg",
-    pool: "no",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "152",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.8263606,-96.9444135]
   }, {
     name: "Royal Crest",
     address: "3558 Wilhurt Ave.",
@@ -108,13 +108,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75216",
     img: "img/Royal Crest - Building.jpg",
-    pool: "no",
-    pets: "no",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "No",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "168",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7139808,-96.7645486]
   }, {
     name: "Southern Oaks Apartments",
     address: "3424 Southern Oaks Blvd. #13",
@@ -122,13 +122,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75216",
     img: "img/Southern Oaks - IMG_1697.jpg",
-    pool: "no",
-    pets: "yes",
-    laundry: "no",
-    washer: "yes",
-    electric: "no",
+    pool: "No",
+    pets: "Yes",
+    laundry: "No",
+    washer: "Yes",
+    electric: "No",
     apartments: "62",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7213674,-96.7732202]
   }, {
     name: "Springdale Apartments",
     address: "1901 Higgins Ln.",
@@ -136,13 +136,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "76111",
     img: "http://www.fillmurray.com/200/300",
-    pool: "no",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "100",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7879642,-97.2876844]
   }, {
     name: "Springdale Estates",
     address: "1050 Springdale Rd.",
@@ -150,13 +150,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "78721",
     img: "img/Springdale Estates - Construction 3.jpg",
-    pool: "yes",
-    pets: "yes",
-    laundry: "no",
-    washer: "yes",
-    electric: "no",
+    pool: "Yes",
+    pets: "Yes",
+    laundry: "No",
+    washer: "Yes",
+    electric: "No",
     apartments: "43",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [30.2708125,-97.6954882]
   }, {
     name: "Terrace View Apartments",
     address: "417 W. Tarrant Road",
@@ -164,13 +164,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75050",
     img: "http://www.amerisouthrealty.com/images/propertyImages/Terrace-View-Apartments/tv_1.jpg",
-    pool: "no",
-    pets: "yes",
-    laundry: "yes",
-    washer: "no",
-    electric: "yes",
+    pool: "No",
+    pets: "Yes",
+    laundry: "Yes",
+    washer: "No",
+    electric: "Yes",
     apartments: "192",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.757114,-97.0118726]
   }, {
     name: "Westmount Place Apartments",
     address: "1441 Westmount Dr.",
@@ -178,13 +178,13 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75211",
     img: "http://www.amerisouthrealty.com/images/propertyImages/Westmount-Place-Apartments/wm_10_fit.jpg",
-    pool: "yes",
-    pets: "yes",
-    laundry: "no",
-    washer: "yes",
-    electric: "no",
+    pool: "Yes",
+    pets: "Yes",
+    laundry: "No",
+    washer: "Yes",
+    electric: "No",
     apartments: "70",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [32.7609655,-96.8700074]
   }, {
     name: "Winfield Estates",
     address: "3535 South Lake Dr.",
@@ -192,16 +192,14 @@ function MainController($scope) {
     state: "Texas",
     zipcode: "75501",
     img: "img/Winfield Estates - Pool.jpg",
-    pool: "yes",
-    pets: "yes",
-    laundry: "no",
-    washer: "yes",
-    electric: "yes",
+    pool: "Yes",
+    pets: "Yes",
+    laundry: "No",
+    washer: "Yes",
+    electric: "Yes",
     apartments: "156",
-    map: "7000+Decker+Ln.+Austin+Texas"
+    latlong: [33.3975841,-94.0915925]
   }];
-  vm.getMap = function(map) {
-    return 'https://www.google.com/maps/embed/v1/search?key=AIzaSyCd4yYuac4ot0nIp49HE9f_Sxy-tVKrD4I&q=+' + map;
-  };
+
 
 }

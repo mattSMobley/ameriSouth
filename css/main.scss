@@ -538,11 +538,45 @@ nav ul a:hover {
   color: $primary;
   font-size: 1.4em;
   img {
-    width: 520px;
-    height: 290px;
+    width: 420px;
+    height: 225px;
     object-fit:cover;
     max-width: 100%;
+    padding: 3px;
+    border: 2px solid lighten($secondary, 20%);
   }
+}
+.container-properties {
+  padding: 1%;
+}
+.properties-container {
+  box-shadow: 2px 2px 2px 2px $primary;
+  padding-bottom: 0em;
+  margin-bottom: 1em;
+}
+.property-name {
+  font-family: $font-serif;
+  font-size: 2.5em;
+  padding: 15px;
+  line-height: 1.2;
+}
+.property-address, .property-city {
+  font-size: 1.5em;
+  padding-left: 15px;
+}
+.property-map {
+  height: 225px;
+  width: 100%;
+  padding: 3px;
+  border: 2px solid $accent;
+}
+.property-feature-container {
+  padding-top: 1.5em;
+  padding-left: 2.5em;
+  line-height: 1.7;
+}
+.property-feature {
+  font-size: 1.0em;
 }
 
 #map {

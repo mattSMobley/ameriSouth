@@ -7,67 +7,71 @@
     <option value="city">City</option>
     <option value="state">State</option>
     <option value="zipcode">ZipCode</option>
+    <option value="apartments"># of Units</option>
   </select>
 </center>
-  <div class="column-12"  ng-repeat="property in MC.properties | orderBy:sortBy">
+<br>
+  <div class="column-12 properties-container"  ng-repeat="property in MC.properties | orderBy:sortBy">
     <div class="column-3">
       <div class="property-img">
         <img ng-src="{{ property.img }}">
       </div>
     </div>
-    <div class="column-6">
+    <div class="column-3">
       <div class="row">
         <div class="property-name">
-          Property: {{ property.name }}
+          {{ property.name }}
         </div>
       </div>
       <div class="row">
         <div class="property-address">
-          Address: {{ property.address }}
+          {{ property.address }}
         </div>
       </div>
       <div class="row">
         <div class="property-city">
-          City: {{ property.city }}, {{ property.state }}
+          {{ property.city }}, {{ property.state }}
         </div>
       </div>
+    </div>
+    <div class="column-3 property-feature-container">
       <div class="row">
-        <div class="property-zipcode">
+        <div class="property-feature">
           Pool: {{ property.pool }}
         </div>
       </div>
       <div class="row">
-        <div class="property-zipcode">
+        <div class="property-feature">
           Pets Allowed: {{ property.pets }}
         </div>
       </div>
       <div class="row">
-        <div class="property-zipcode">
+        <div class="property-feature">
           W/D Hookups: {{ property.washer }}
         </div>
       </div>
       <div class="row">
-        <div class="property-zipcode">
+        <div class="property-feature">
           Laundry on-site: {{ property.laundry }}
         </div>
       </div>
       <div class="row">
-        <div class="property-zipcode">
+        <div class="property-feature">
           Electric Included: {{ property.electric }}
         </div>
       </div>
       <div class="row">
-        <div class="property-zipcode">
+        <div class="property-feature">
           Number of Units: {{ property.apartments }}
         </div>
       </div>
     </div>
     <div class="column-3">
-      <ng-map zoom="11" center="[40.74, -74.18]">
-        <marker position="[40.74, -74.18]" />
-        <shape name="circle" radius="400" center="[40.74,-74.18]" radius="4000" />
+      <ng-map class="property-map" zoom="11" default-style="false" center="{{ property.latlong }}">
+        <marker position="{{ property.latlong }}" />
+        <!-- <shape name="circle" radius="200" center="{{ property.latlong }}" radius="4000" /> -->
         <control name="overviewMap" opened="true" />
-      </ng-map>` 
+      </ng-map>`
     </div>
   </div>
 </div>
