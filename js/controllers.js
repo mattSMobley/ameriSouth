@@ -9,99 +9,199 @@ function MainController($scope) {
     city: "Dallas",
     state: "Texas",
     zipcode: "75203",
-    img: "img/Good Haven - Drone shot 2.jpg"
+    img: "img/Good Haven - Drone shot 2.jpg",
+    pool: "no",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "324",
+    map: "1810+High+Hill+Dallas+Texas"
   }, {
     name: "Huntington Meadows",
     address: "7000 Decker Ln.",
     city: "Austin",
     state: "Texas",
     zipcode: "78724",
-    img: "http://www.amerisouthrealty.com/images/propertyImages/Huntington/hunt001.jpg"
+    img: "img/Huntington1.jpg",
+    pool: "yes",
+    pets: "no",
+    laundry: "yes",
+    washer: "yes",
+    electric: "no",
+    apartments: "200",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Park Creek Manor Apartments",
     address: "2520 Coombs Creek St.",
     city: "Dallas",
     state: "Texas",
     zipcode: "75211",
-    img: "http://www.amerisouthrealty.com/images/propertyImages/Park-Creek-Manor-Apartments/pcm_1_fit.jpg"
+    img: "img/Park Creek Manor - Building and Sign Pic.jpg",
+    pool: "yes",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "322",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Prairie Ridge Apartments",
     address: "313 Freetown Rd.",
     city: "Grand Prairie",
     state: "Texas",
     zipcode: "75051",
-    img: "http://www.amerisouthrealty.com/images/propertyImages/Prairie-Ridge-Apartments/pr_2_fit.jpg"
+    img: "http://www.amerisouthrealty.com/images/propertyImages/Prairie-Ridge-Apartments/pr_2_fit.jpg",
+    pool: "no",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "100",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Prince Hall II",
     address: "4820 E. Berry St.",
     city: "Ft. Worth",
     state: "Texas",
     zipcode: "76105",
-    img: "http://www.fillmurray.com/200/300"
+    img: "http://www.fillmurray.com/200/300",
+    pool: "no",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "76",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Pythian Manor",
     address: "2719 E. Illinois Ave. #100",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
-    img: "http://www.amerisouthrealty.com/images/propertyImages/Pythian-Manor/pm_1_fit.jpg"
+    img: "img/Pythian Manor - Building.jpg",
+    pool: "no",
+    pets: "no",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "76",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Raible Place",
     address: "1216 N. Britain Rd.",
     city: "Irving",
     state: "Texas",
     zipcode: "75061",
-    img: "http://www.fillmurray.com/200/300"
+    img: "img/Raible Place- 927.jpg",
+    pool: "no",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "152",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Royal Crest",
     address: "3558 Wilhurt Ave.",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
-    img: "http://www.fillmurray.com/200/300"
+    img: "img/Royal Crest - Building.jpg",
+    pool: "no",
+    pets: "no",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "168",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Southern Oaks Apartments",
     address: "3424 Southern Oaks Blvd. #13",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
-    img: "http://www.fillmurray.com/200/300"
+    img: "img/Southern Oaks - IMG_1697.jpg",
+    pool: "no",
+    pets: "yes",
+    laundry: "no",
+    washer: "yes",
+    electric: "no",
+    apartments: "62",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Springdale Apartments",
     address: "1901 Higgins Ln.",
     city: "Ft. Worth",
     state: "Texas",
     zipcode: "76111",
-    img: "http://www.fillmurray.com/200/300"
+    img: "http://www.fillmurray.com/200/300",
+    pool: "no",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "100",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Springdale Estates",
     address: "1050 Springdale Rd.",
     city: "Austin",
     state: "Texas",
     zipcode: "78721",
-    img: "http://www.fillmurray.com/200/300"
+    img: "img/Springdale Estates - Construction 3.jpg",
+    pool: "yes",
+    pets: "yes",
+    laundry: "no",
+    washer: "yes",
+    electric: "no",
+    apartments: "43",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Terrace View Apartments",
     address: "417 W. Tarrant Road",
     city: "Grand Prairie",
     state: "Texas",
     zipcode: "75050",
-    img: "http://www.fillmurray.com/200/300"
+    img: "http://www.amerisouthrealty.com/images/propertyImages/Terrace-View-Apartments/tv_1.jpg",
+    pool: "no",
+    pets: "yes",
+    laundry: "yes",
+    washer: "no",
+    electric: "yes",
+    apartments: "192",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Westmount Place Apartments",
     address: "1441 Westmount Dr.",
     city: "Dallas",
     state: "Texas",
     zipcode: "75211",
-    img: "http://www.fillmurray.com/200/300"
+    img: "http://www.amerisouthrealty.com/images/propertyImages/Westmount-Place-Apartments/wm_10_fit.jpg",
+    pool: "yes",
+    pets: "yes",
+    laundry: "no",
+    washer: "yes",
+    electric: "no",
+    apartments: "70",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }, {
     name: "Winfield Estates",
     address: "3535 South Lake Dr.",
     city: "Texarkana",
     state: "Texas",
     zipcode: "75501",
-    img: "http://www.fillmurray.com/200/300"
+    img: "img/Winfield Estates - Pool.jpg",
+    pool: "yes",
+    pets: "yes",
+    laundry: "no",
+    washer: "yes",
+    electric: "yes",
+    apartments: "156",
+    map: "7000+Decker+Ln.+Austin+Texas"
   }];
-
+  vm.getMap = function(map) {
+    return 'https://www.google.com/maps/embed/v1/search?key=AIzaSyCd4yYuac4ot0nIp49HE9f_Sxy-tVKrD4I&q=+' + map;
+  };
 
 }

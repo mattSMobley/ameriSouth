@@ -15,12 +15,6 @@ a {
   color: $primary;
 }
 
-// a:hover {
-//   border-top: 1px solid $secondary;
-//   border-bottom: 1px solid $secondary;
-//   color: $secondary;
-//   text-decoration: none;
-// }
 
 img {
   width: auto;
@@ -46,8 +40,8 @@ img {
 body {
   background-color: white;
   color: black;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: $font-sans;
+  font-weight: 300;
 }
 body, html, main {
 	/* important */
@@ -68,7 +62,7 @@ body, html, main {
   text-transform: uppercase;
   h1 {
     font-size: 6em;
-    font-family: serif;
+    font-family: $font-serif;
   }
 }
 
@@ -194,6 +188,13 @@ body, html, main {
   width: 80%;
   background-color: lighten($secondary, 70%);
   box-shadow: 5px 5px 5px #888888;
+  img {
+    height: 10em;
+    margin: 2%;
+    padding: 3px;
+    border: 2px solid gray;
+    background-color: white;
+  }
 }
 .cd-color-3 {
   width: 80%;
@@ -221,7 +222,7 @@ body, html, main {
     font-size: 1.5em;
     color: white;
     text-align: center;
-    font-family: serif;
+    font-family: $font-serif;
     text-transform: uppercase;
   }
   hr {
@@ -298,7 +299,7 @@ figcaption {
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
-  font-family: "Gill Sans", sans-serif;
+  font-family: $font-sans;
 }
 
 .open-nav {
@@ -529,25 +530,40 @@ nav ul a:hover {
 }
 [class*='property-'] {
   color: $primary;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  img {
+    width: 425px;
+    height: 250px;
+    object-fit:cover;
+  }
+}
+
+#map {
+    height:250px;
+    width:325px;
+}
+.infoWindowContent {
+    font-size:  11px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
 }
 
 footer {
   background-color: $primary;
   // padding-bottom: 10em;
-  font-family: 'Libre Baskerville';
-  color: white;
+  font-family: $font-serif;
+  color: #bbb;
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
   h1 {
-    font-weight: 400;
-    font-family: 'Libre Baskerville';
+    font-weight: 200;
+    font-family: $font-serif;
 
   }
   h2 {
     font-size: 1.5em;
-    font-weight: 400;
-    font-family: 'Libre Baskerville';
+    font-weight: 200;
+    font-family: $font-serif;
   }
 }
 @media only screen and (max-width: 1000px) {
