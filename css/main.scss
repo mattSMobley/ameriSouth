@@ -18,7 +18,7 @@ a {
 
 img {
   width: auto;
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
 }
 .wrapper {
@@ -340,21 +340,23 @@ figcaption {
   .fade-in h3 {
     font-size: 1em;
   }
-  // .main-page-icons {
-  //   display: inline-block;
-  //   opacity: .71
-  // }
+  .main-page-icons {
+    img {
+      max-width: 90px;
+    }
+  }
 
 }
 .main-page-icons {
   padding-top: 6em;
   padding-bottom: 3em;
-  opacity: .6
+  opacity: .6;
+  img {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 480px){
-  .fa {
-    font-size: 2.5em;
-  }
+
   .fade-in h3 {
     font-size: .8em;
   }
@@ -362,7 +364,11 @@ figcaption {
     padding-top: 3em;
     padding-bottom: 3em;
     display: inline-flex;
-    opacity: .71
+    opacity: .71;
+    img {
+      width: 80px;
+      max-width: none;
+    }
   }
 }
 
@@ -532,9 +538,10 @@ nav ul a:hover {
   color: $primary;
   font-size: 1.4em;
   img {
-    width: 425px;
-    height: 250px;
+    width: 520px;
+    height: 290px;
     object-fit:cover;
+    max-width: 100%;
   }
 }
 
