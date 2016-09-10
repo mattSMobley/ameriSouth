@@ -630,11 +630,11 @@ footer {
   }
 
 }
-// @media only screen and (max-width: 700px) {
-//   footer {
-//     padding-bottom: 8em;
-//   }
-// }
+@media only screen and (max-width: 500px) {
+  .property-name, .property-address, .property-city  {
+    padding-left: 32px;
+  }
+}
 
 
 
