@@ -355,6 +355,17 @@ figcaption {
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 680px){
+
+
+  .main-page-icons {
+    img {
+      max-width: 150%;
+      margin-left: -1.2em;
+
+    }
+  }
+}
 @media only screen and (max-width: 480px){
 
   .fade-in h3 {
@@ -367,7 +378,7 @@ figcaption {
     opacity: .71;
     img {
       max-width: 200%;
-      margin-left: -1.1em;
+      margin-left: -1.2em;
 
     }
   }
