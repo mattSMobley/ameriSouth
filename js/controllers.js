@@ -6,6 +6,7 @@ function MainController($scope) {
   vm.properties = [{
     name: "Good Haven",
     address: "1810 High Hill Blvd.",
+    dallas: "Yes",
     city: "Dallas",
     state: "Texas",
     zipcode: "75203",
@@ -20,6 +21,7 @@ function MainController($scope) {
   }, {
     name: "Huntington Meadows",
     address: "7000 Decker Ln.",
+    austin: "Yes",
     city: "Austin",
     state: "Texas",
     zipcode: "78724",
@@ -34,6 +36,7 @@ function MainController($scope) {
   }, {
     name: "Park Creek Manor",
     address: "2520 Coombs Creek St.",
+    dallas: "Yes",
     city: "Dallas",
     state: "Texas",
     zipcode: "75211",
@@ -48,6 +51,7 @@ function MainController($scope) {
   }, {
     name: "Prairie Ridge Apartments",
     address: "313 Freetown Rd.",
+    grand: "Yes",
     city: "Grand Prairie",
     state: "Texas",
     zipcode: "75051",
@@ -62,6 +66,7 @@ function MainController($scope) {
   }, {
     name: "Prince Hall II",
     address: "4820 E. Berry St.",
+    fort: "Yes",
     city: "Ft. Worth",
     state: "Texas",
     zipcode: "76105",
@@ -76,6 +81,7 @@ function MainController($scope) {
   }, {
     name: "Pythian Manor",
     address: "2719 E. IlliNois Ave. #100",
+    dallas: "Yes",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
@@ -90,6 +96,7 @@ function MainController($scope) {
   }, {
     name: "Raible Place",
     address: "1216 N. Britain Rd.",
+    irving: "Yes",
     city: "Irving",
     state: "Texas",
     zipcode: "75061",
@@ -104,6 +111,7 @@ function MainController($scope) {
   }, {
     name: "Royal Crest",
     address: "3558 Wilhurt Ave.",
+    dallas: "Yes",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
@@ -118,6 +126,7 @@ function MainController($scope) {
   }, {
     name: "Southern Oaks Apartments",
     address: "3424 Southern Oaks Blvd. #13",
+    dallas: "Yes",
     city: "Dallas",
     state: "Texas",
     zipcode: "75216",
@@ -132,6 +141,7 @@ function MainController($scope) {
   }, {
     name: "Springdale Apartments",
     address: "1901 Higgins Ln.",
+    fort: "Yes",
     city: "Ft. Worth",
     state: "Texas",
     zipcode: "76111",
@@ -146,6 +156,7 @@ function MainController($scope) {
   }, {
     name: "Springdale Estates",
     address: "1050 Springdale Rd.",
+    austin: "Yes",
     city: "Austin",
     state: "Texas",
     zipcode: "78721",
@@ -160,6 +171,7 @@ function MainController($scope) {
   }, {
     name: "Terrace View Apartments",
     address: "417 W. Tarrant Road",
+    grand: "Yes",
     city: "Grand Prairie",
     state: "Texas",
     zipcode: "75050",
@@ -174,6 +186,7 @@ function MainController($scope) {
   }, {
     name: "Westmount Place Apartments",
     address: "1441 Westmount Dr.",
+    dallas: "Yes",
     city: "Dallas",
     state: "Texas",
     zipcode: "75211",
@@ -188,6 +201,7 @@ function MainController($scope) {
   }, {
     name: "Winfield Estates",
     address: "3535 South Lake Dr.",
+    texarkana: "Yes",
     city: "Texarkana",
     state: "Texas",
     zipcode: "75501",
@@ -201,7 +215,12 @@ function MainController($scope) {
     latlong: [33.3975841,-94.0915925]
   }];
   vm.propertyTypes = {
-    city: [],
+    austin: "Yes",
+    dallas: "Yes",
+    grand: "Yes",
+    fort: "Yes",
+    irving: "Yes",
+    texarkana: "Yes",
     pool: "No",
     pets: "No",
     laundry: "No",
@@ -212,4 +231,5 @@ function MainController($scope) {
       //for var i in city, if arg exists, splice and join
       vm.propertyTypes.city.push(arg);
     }
+
 }

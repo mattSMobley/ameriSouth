@@ -6,20 +6,20 @@
   <div class="filter-area">
 
     <p> FILTER RESULTS </p>
-      <div class="citySort" ng-model="sortByCity">
-        <input type="checkbox" ng-model="propertyTypes.austin" ng-true-value="'Yes'" ng-false-value="'No'">Austin</input>
-        <input type="checkbox" ng-model="propertyTypes.dallas" ng-true-value="'Yes'" ng-false-value="'No'">Dallas</input>
-        <input type="checkbox" ng-model="propertyTypes.grand" ng-true-value="'Yes'" ng-false-value="'No'">Grand Prairie</input>
-        <input type="checkbox" ng-model="propertyTypes.fort" ng-true-value="'Yes'" ng-false-value="'No'">Fort Worth</input>
-        <input type="checkbox" ng-model="propertyTypes.irving" ng-true-value="'Yes'" ng-false-value="'No'">Irving</input>
-        <input type="checkbox" ng-model="propertyTypes.texarkana" ng-true-value="'Yes'" ng-false-value="'No'">Texarkana</input>
-      </div>
+      <!-- <div class="citySort">
+        <input type="checkbox" ng-model="propertyTypes.austin" ng-true-value="'Yes'" ng-false-value="'No'" ng-checked="true">Austin</input>
+        <input type="checkbox" ng-model="propertyTypes.dallas" ng-true-value="'Yes'" ng-false-value="'No'" ng-checked="true">Dallas</input>
+        <input type="checkbox" ng-model="propertyTypes.grand" ng-true-value="'Yes'" ng-false-value="'No'" ng-checked="true">Grand Prairie</input>
+        <input type="checkbox" ng-model="propertyTypes.fort" ng-true-value="'Yes'" ng-false-value="'No'" ng-checked="true">Fort Worth</input>
+        <input type="checkbox" ng-model="propertyTypes.irving" ng-true-value="'Yes'" ng-false-value="'No'" ng-checked="true">Irving</input>
+        <input type="checkbox" ng-model="propertyTypes.texarkana" ng-true-value="'Yes'" ng-false-value="'No'" ng-checked="true">Texarkana</input>
+      </div> -->
     <div class="checkSorts">
-      <input type="checkbox" ng-model="propertyTypes.pool" ng-true-value="'Yes'" ng-false-value="'No'">Pool On-Site</input>
-      <input type="checkbox" ng-model="propertyTypes.pets" ng-true-value="'Yes'" ng-false-value="'No'">Pets Allowed</input>
-      <input type="checkbox" ng-model="propertyTypes.laundry" ng-true-value="'Yes'" ng-false-value="'No'">Laundry On-Site</input>
-      <input type="checkbox" ng-model="propertyTypes.washer" ng-true-value="'Yes'" ng-false-value="'No'">W/D Hookups</input>
-      <input type="checkbox" ng-model="propertyTypes.electric" ng-true-value="'Yes'" ng-false-value="'No'">Electric Included</input>
+      <input type="checkbox" ng-model="propertyTypes.pool" ng-true-value="'Yes'" ng-false-value="undefined">Pool On-Site</input>
+      <input type="checkbox" ng-model="propertyTypes.pets" ng-true-value="'Yes'" ng-false-value="undefined">Pets Allowed</input>
+      <input type="checkbox" ng-model="propertyTypes.laundry" ng-true-value="'Yes'" ng-false-value="undefined">Laundry On-Site</input>
+      <input type="checkbox" ng-model="propertyTypes.washer" ng-true-value="'Yes'" ng-false-value="undefined">W/D Hookups</input>
+      <input type="checkbox" ng-model="propertyTypes.electric" ng-true-value="'Yes'" ng-false-value="undefined">Electric Included</input>
     </div>
     </div>
 </center>
@@ -84,7 +84,7 @@
         <marker position="{{ property.latlong }}" />
         <!-- <shape name="circle" radius="200" center="{{ property.latlong }}" radius="4000" /> -->
         <control name="overviewMap" opened="true" />
-      </ng-map>`
+      </ng-map>
     </div>
   </div>
 </div>
