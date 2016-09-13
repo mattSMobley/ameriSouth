@@ -200,6 +200,16 @@ function MainController($scope) {
     apartments: "156",
     latlong: [33.3975841,-94.0915925]
   }];
-
-
+  vm.propertyTypes = {
+    city: [],
+    pool: "No",
+    pets: "No",
+    laundry: "No",
+    washer: "No",
+    electric: "No"
+    }
+    vm.addCity = function(arg){
+      //for var i in city, if arg exists, splice and join
+      vm.propertyTypes.city.push(arg);
+    }
 }

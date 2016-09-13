@@ -590,6 +590,13 @@ nav ul a:hover {
 .property-feature {
   font-size: 1.0em;
 }
+.citySort {
+  background-color: #aaa;
+  padding: 1em;
+}
+.checkSorts {
+  padding: 1em;
+}
 
 #map {
     height:250px;
@@ -636,7 +643,17 @@ footer {
   }
 }
 
+.filter-area {
+  background: #ddd;
+  width: 60%;
+  padding: 1em 0em;
 
+  input {
+  // padding: 1em 0em 1em 0em;
+  margin-left: 2em;
+  margin-right: .5em;
+  }
+}
 
 
 

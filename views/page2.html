@@ -1,17 +1,30 @@
 <div class="container-properties">
-  <center><a href="/#/">HOME</a></center>
+  <center><a href="#/">HOME</a></center>
   <center><p> we have {{ MC.properties.length }} properties </p></center>
   <br>
-  <center><p> SORT BY CITY: </p>
-  <select ng-model="sortBy">
-    <option value="city">City</option>
-    <option value="state">State</option>
-    <option value="zipcode">ZipCode</option>
-    <option value="apartments"># of Units</option>
-  </select>
+  <center>
+  <div class="filter-area">
+
+    <p> FILTER RESULTS </p>
+      <div class="citySort" ng-model="sortByCity">
+        <input type="checkbox" ng-model="propertyTypes.austin" ng-true-value="'Yes'" ng-false-value="'No'">Austin</input>
+        <input type="checkbox" ng-model="propertyTypes.dallas" ng-true-value="'Yes'" ng-false-value="'No'">Dallas</input>
+        <input type="checkbox" ng-model="propertyTypes.grand" ng-true-value="'Yes'" ng-false-value="'No'">Grand Prairie</input>
+        <input type="checkbox" ng-model="propertyTypes.fort" ng-true-value="'Yes'" ng-false-value="'No'">Fort Worth</input>
+        <input type="checkbox" ng-model="propertyTypes.irving" ng-true-value="'Yes'" ng-false-value="'No'">Irving</input>
+        <input type="checkbox" ng-model="propertyTypes.texarkana" ng-true-value="'Yes'" ng-false-value="'No'">Texarkana</input>
+      </div>
+    <div class="checkSorts">
+      <input type="checkbox" ng-model="propertyTypes.pool" ng-true-value="'Yes'" ng-false-value="'No'">Pool On-Site</input>
+      <input type="checkbox" ng-model="propertyTypes.pets" ng-true-value="'Yes'" ng-false-value="'No'">Pets Allowed</input>
+      <input type="checkbox" ng-model="propertyTypes.laundry" ng-true-value="'Yes'" ng-false-value="'No'">Laundry On-Site</input>
+      <input type="checkbox" ng-model="propertyTypes.washer" ng-true-value="'Yes'" ng-false-value="'No'">W/D Hookups</input>
+      <input type="checkbox" ng-model="propertyTypes.electric" ng-true-value="'Yes'" ng-false-value="'No'">Electric Included</input>
+    </div>
+    </div>
 </center>
 <br>
-  <div class="column-12 properties-container"  ng-repeat="property in MC.properties | orderBy:sortBy">
+  <div class="column-12 properties-container"  ng-repeat="property in MC.properties | filter:propertyTypes">
     <div class="column-3">
       <div class="property-img">
         <img ng-src="{{ property.img }}">
