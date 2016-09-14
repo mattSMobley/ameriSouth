@@ -597,6 +597,39 @@ nav ul a:hover {
 .checkSorts {
   padding: 1em;
 }
+.page-intro {
+  margin: 1em;
+  padding: 1em 3em;
+  font-size: 2em;
+  text-align: center;
+
+}
+.services-container {
+    padding: 1%;
+    h1 {
+      color: $secondary;
+      padding-top: 1em;
+    }
+    p a {
+      color: $accent;
+    }
+    a:hover {
+      color: darken($accent, 10%);
+    }
+}
+.contact-map iframe {
+  width: 80%;
+  height: 20em;
+  margin: 4% 4% 0% 4%;
+}
+@media only screen and (max-width: 600px){
+  .page-intro {
+    margin: 1em;
+    padding: 1em 1em;
+    font-size: 2em;
+    text-align: center;
+  }
+}
 
 #map {
     height:250px;
