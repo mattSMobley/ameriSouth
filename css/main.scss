@@ -687,6 +687,11 @@ footer {
   margin-right: .5em;
   }
 }
+@media only screen and (max-width: 500px) {
+  .filter-area {
+    width: 80%;
+  }
+}
 
 
 
