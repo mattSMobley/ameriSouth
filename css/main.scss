@@ -678,18 +678,18 @@ footer {
 
 .filter-area {
   background: #ddd;
-  width: 60%;
+  width: 40%;
   padding: 1em 0em;
 
   input {
   // padding: 1em 0em 1em 0em;
-  margin-left: 2em;
+  margin-left: 0em;
   margin-right: .5em;
   }
 }
 @media only screen and (max-width: 500px) {
   .filter-area {
-    width: 85%;
+    width: 65%;
     .checkSorts {
     display: block;
     padding: 1em 1em 1em 0em;
