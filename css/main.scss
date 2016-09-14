@@ -689,7 +689,14 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .filter-area {
-    width: 80%;
+    width: 85%;
+    .checkSorts {
+    display: block;
+    padding: 1em 1em 1em 0em;
+    input {
+      margin-left: 1em;
+    }
+  }
   }
 }
 
