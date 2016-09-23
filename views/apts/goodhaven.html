@@ -1,0 +1,93 @@
+<div class="container-apts">
+  <center>
+    <div id="home-link">
+      <a href="#/">HOME</a>
+    </div>
+
+    <h1 class="apt-name">
+      Huntington Meadows
+    </h1>
+    <div class="slideshow">
+      <div class="bss-slides" tabindex="1" autofocus="autofocus">
+        <figure>
+          <img src="img/Huntington - Sign.jpg" width="100%" />
+          <figcaption>Huntington Entrance</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Huntington - Office.jpg" width="100%" />
+          <figcaption>Huntington Office</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Huntington1.jpg" width="100%" />
+          <figcaption>Huntington Apartments</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Huntington2.jpg" width="100%" />
+          <figcaption>Huntington Apartments</figcaption>
+        </figure>
+
+      </div>
+      <!-- // bss-slides -->
+    </div>
+
+</div>
+<div class="container-apts-second">
+  <h1> Location </h1>
+  <div class="row">
+    <div class="column-1">
+    </div>
+    <div class="column-5">
+      <ng-map zoom="12" default-style="false" center="[30.2967014,-97.6277981]" style="padding-left: 6em;">
+        <marker position="[30.2967014,-97.6277981]" />
+        <control name="overviewMap" opened="true" />
+      </ng-map>
+    </div>
+    <div class="column-5 apt-info">
+      <p>7000 Decker Lane</p>
+      <p>Austin, Texas 78724</p>
+      <p>Phone: (512) 929-5555</p>
+      <p>Fax: (512) 929-5557</p>
+    </div>
+    <div class="column-1">
+    </div>
+  </div>
+</div>
+<center>
+<div class="container-apts third">
+  <h1> Floorplans </h1>
+  <p>
+    Coming Soon!
+  </p>
+  <!-- <div class="slideshow-floorplans">
+  <div class="bss-slides" tabindex="1" autofocus="autofocus">
+    <figure>
+      <img src="http://www.amerisouthrealty.com/images/propertyImages/Huntington/floorplans/one_one.jpg" width="100%" />
+      <figcaption>1 Bedroom, 1 Bathroom</figcaption>
+    </figure>
+    <figure>
+      <img src="http://www.amerisouthrealty.com/images/propertyImages/Huntington/floorplans/two_two.jpg" width="100%" />
+      <figcaption>2 Bedrooms, 2 Bathrooms</figcaption>
+    </figure>
+    <figure>
+      <img src="http://www.amerisouthrealty.com/images/propertyImages/Huntington/floorplans/three_two.jpg" width="100%" />
+      <figcaption>3 Bedrooms, 2 Bathrooms</figcaption>
+    </figure>
+    <figure>
+      <img src="http://www.amerisouthrealty.com/images/propertyImages/Huntington/floorplans/four_two.jpg" width="100%" />
+      <figcaption>4 Bedrooms, 2 Bathrooms</figcaption>
+    </figure>
+  </div>
+</div> -->
+</div>
+</center>
+
+
+<script>
+  var opts = {
+    auto: {
+      speed: 3500,
+      pauseOnHover: true
+    }
+  };
+  makeBSS('.bss-slides', opts);
+</script>
