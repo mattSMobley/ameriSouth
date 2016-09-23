@@ -174,7 +174,7 @@ body, html, main {
 .cd-color-yellow {
   width: 83%;
   background-color: lighten($accent, 40%);
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 1px 1px 10px 3px #888888;
   img {
     height: 10em;
     margin: 2%;
@@ -193,7 +193,7 @@ body, html, main {
 .cd-color-purple {
   width: 83%;
   background-color: lighten($secondary, 70%);
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 1px 1px 10px 3px #888888;
   img {
     height: 10em;
     margin: 2%;
@@ -212,7 +212,7 @@ body, html, main {
 .cd-color-gray {
   width: 83%;
   background-color: $base;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 1px 1px 10px 3px #888888;
   img {
     width: 80%;
     height: auto;
@@ -722,7 +722,13 @@ footer {
   font-size: 3.5em;
   color: $secondary;
   text-shadow: 2px 2px $accent;
-
+  padding-top: 1.5em;
+}
+.coming-soon {
+  font-family: $font-sans;
+  padding: 3em;
+  font-size: 2em;
+  font-style: italic;
 }
 
 .apt-info {
