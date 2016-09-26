@@ -725,7 +725,7 @@ footer {
 .apt-name {
   font-family: $font-serif;
   padding-bottom: .5em;
-  font-size: 3em;
+  font-size: 3.5em;
   color: $secondary;
   text-shadow: 2px 2px $accent;
   padding-top: 1.5em;
@@ -799,7 +799,7 @@ footer {
   opacity: 0;
   transition: opacity 1.2s;
   backface-visibility: hidden;
-  height: 35em;
+  height: 40em;
   width: 100%;
 }
 .bss-slides .bss-show{
