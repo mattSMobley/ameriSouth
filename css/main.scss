@@ -699,6 +699,8 @@ footer {
   background: #ddd;
   width: 40%;
   padding: 1em 0em;
+  border: 1px solid $primary;
+  font-size: 1.2em;
 
   input {
   // padding: 1em 0em 1em 0em;
@@ -729,6 +731,9 @@ footer {
   color: $secondary;
   text-shadow: 2px 2px $accent;
   padding-top: 1.5em;
+}
+.apt-container {
+  background-image: url("../img/concrete_seamless.png");
 }
 .coming-soon {
   font-family: $font-sans;
